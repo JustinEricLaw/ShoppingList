@@ -44,6 +44,7 @@ header {
 	margin: 1.5em 0;
 	border: 2px solid $primary-color;
   position: relative;
+  height: 46px;
 }
 
 .item-input input {
@@ -78,15 +79,13 @@ li {
   display: inline-block;
   padding: .5em .75em;
   width: 100%;
-  height: 46px;
-  border: none;
 }
 
 .plus-container {
   background-color: $primary-color;
   padding-top: 1em;
   display: inline-block;
-  height: 46px;
+  height: 100%;
   width: 46px;
   position: absolute;
   right: 0;

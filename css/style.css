@@ -523,7 +523,8 @@ header {
 .new-item {
   margin: 1.5em 0;
   border: 2px solid #046380;
-  position: relative; }
+  position: relative;
+  height: 46px; }
 
 .item-input input {
   border: none;
@@ -551,15 +552,13 @@ li {
 .item-input {
   display: inline-block;
   padding: .5em .75em;
-  width: 100%;
-  height: 46px;
-  border: none; }
+  width: 100%; }
 
 .plus-container {
   background-color: #046380;
   padding-top: 1em;
   display: inline-block;
-  height: 46px;
+  height: 100%;
   width: 46px;
   position: absolute;
   right: 0;
