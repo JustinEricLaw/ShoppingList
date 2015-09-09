@@ -1,0 +1,74 @@
+/* ******************************************
+	Typography
+****************************************** */ 
+html {
+  font-size: 100%;
+  line-height: 1;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: $font-stack-display;
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 1.1;
+  color: $primary-color;
+  text-align: center;
+  @include bp(sm) {
+    font-size: 2.75em;
+  }
+  @include bp(md) {
+    font-size: 3.25em;
+  }
+  @include bp(lg) {
+    font-size: 4.25em;
+  }
+}
+
+p, 
+li {
+  font-family: $font-stack-main;
+  color: $primary-color;
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-style: normal;
+  @include bp(md) {
+    font-size: 1.5em;
+  }
+}
+
+.item-input p {
+  font-size: 1.25em;
+  color: $secondary-color;
+}
+
+.crossed-off {
+  text-decoration: line-through;
+  color: $secondary-color;
+  font-style: italic;
+}
+
+.instructions {
+  font-size: .85em;
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-style: italic;
+  text-align: right;
+}
+
+
+
+
+
+::-moz-selection {
+  background: $secondary-color;
+  color: #fff;
+}
+
+::selection {
+  background: $secondary-color;
+  color: #fff;
+}

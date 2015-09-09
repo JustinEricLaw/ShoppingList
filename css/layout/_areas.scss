@@ -1,0 +1,126 @@
+/* ******************************************
+Layout
+****************************************** */
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: $primary-color;
+  height: 100vh;
+  padding: 1.25em;
+  background: #046380;
+  background: -moz-linear-gradient(top, #046380 0%, #046380 30%, #031c24 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #046380), color-stop(30%, #046380), color-stop(100%, #031c24));
+  background: -webkit-linear-gradient(top, #046380 0%, #046380 30%, #031c24 100%);
+  background: -o-linear-gradient(top, #046380 0%, #046380 30%, #031c24 100%);
+  background: -ms-linear-gradient(top, #046380 0%, #046380 30%, #031c24 100%);
+  background: linear-gradient(to bottom, #046380 0%, #046380 30%, #031c24 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#046380', endColorstr='#031c24', GradientType=0 );
+}
+
+.container {
+	background-color: #fff;
+	padding: 1.5em;
+	min-height: 100%;
+	max-width: 50em;
+	margin: 0 auto;
+  border-radius: 12px;
+}
+
+.main {
+  height: 100%;
+}
+
+header {
+	padding: .5em 0 1em;
+}
+
+
+.new-item {
+	margin: 1.5em 0;
+	border: 2px solid $primary-color;
+  position: relative;
+}
+
+.item-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.15s 0.15s ease; 
+  opacity: 0;
+}
+
+button {
+  border: none;
+}
+
+li {
+	list-style-type: none;
+	padding: .5em 0;
+	border-bottom: 1px solid $secondary-color;
+  position: relative;
+}
+
+.instructions {
+	padding: 1em 0;
+}
+
+.item-input {
+  display: inline-block;
+  padding: .5em .75em;
+  width: 100%;
+}
+
+.plus-container {
+  background-color: $primary-color;
+  padding-top: 1em;
+  display: inline-block;
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.plus-icon {
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+}
+
+a.delete {
+  position: absolute;
+  right: .5em;
+  bottom: 0;
+  text-decoration: none;
+  color: $primary-color;
+  font-size: 1.5em;
+  &:hover,
+  &:focus {
+    color: #999;
+  }
+  @include bp(md) {
+    right: .4em;
+  }
+}
+
+.box {
+  border: 2px solid $primary-color;
+  height: 1em;
+  width: 1em;
+  float: left;
+  margin-top: .25em;
+  margin-right: .4em;
+}
+
+
